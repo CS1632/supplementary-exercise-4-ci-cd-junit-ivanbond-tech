@@ -271,15 +271,3 @@ public class RentACatImpl implements RentACat {
 		sc.close();
 	}
 }
-
-# EXTRA
-When I rent cat number 2
-Then the rent is successful
-When I list the cats
-Then the listing is: "ID 1. Jennyanydots\nID 3. Mistoffelees\n"
-When I return cat number 2
-Then the return is successful
-When I list the cats
-Then the listing is: "ID 1. Jennyanydots\nID 2. Old Deuteronomy\nID 3. Mistoffelees\n"
-When I return cat number 2
-Then the return is unsuccessful
